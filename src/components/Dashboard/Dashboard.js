@@ -68,6 +68,27 @@ const Dashboard = () => {
               <p className="compared">Compared to 78</p>
             </div>
           </div>
+          <div>
+            <div className="update-button">
+              <h3>Update Log</h3>
+              <button>Refresh</button>
+            </div>
+            <div className="previous-updates">
+              <p className="update-text">
+                <span className="log-version cur">v0.0.3</span>
+                <span className="date">01/25/21</span>• Added Captcha Bypass for
+                Walmart US
+              </p>
+              <p className="update-text">
+                <span className="log-version">v0.0.2</span>
+                <span className="date">01/10/21</span>• Add UI Bug Fixes
+              </p>
+              <p className="update-text">
+                <span className="log-version">v0.0.1</span>
+                <span className="date">01/05/21</span>• Add Supreme US
+              </p>
+            </div>
+          </div>
         </div>
         <div className="checkout-feed">
           <h1>Checkout Feed</h1>

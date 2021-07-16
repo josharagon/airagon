@@ -34,16 +34,6 @@ const data = {
 
 const options = {
   fillOpacity: 0.2,
-  scales: {
-    xAxes: [
-      {
-        type: "time",
-        time: {
-          unit: "month",
-        },
-      },
-    ],
-  },
   elements: {
     point: {
       radius: 1,
@@ -61,6 +51,7 @@ const options = {
   },
   plugins: {
     legend: {
+      display: false,
       labels: {
         usePointStyle: true,
       },

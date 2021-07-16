@@ -141,7 +141,7 @@
 
 .stats {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .checkouts {
@@ -157,11 +157,11 @@
 .stat-number {
   color: rgb(255, 255, 255);
   font-size: 25px;
-  margin: 0 7px 0 0;
+  margin: 0 8px 0 0;
 }
 
 .perc-diff {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .pos {
@@ -179,6 +179,7 @@
 
 .compared {
   margin: 5px 0 0 0;
+  font-size: 15px;
 }
 
 #dollar {
@@ -195,4 +196,50 @@
   position: absolute;
   top: 0px;
   left: 0px;
+}
+
+.update-button {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.update-button h3 {
+  font-size: 20px;
+  color: #9e9fa4;
+}
+
+.update-button button {
+  background-color: rgb(83, 4, 255);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.previous-updates {
+  background-color: #1e2227;
+  width: 470px;
+  border-radius: 6px;
+  padding: 10px;
+}
+.update-text {
+  color: #9e9fa4;
+}
+
+.log-version {
+  color: rgb(228, 233, 156);
+  margin: 0 10px 0 0;
+}
+
+.cur {
+  color: rgb(156, 233, 156) !important;
+}
+
+.date {
+  margin: 0 15px 0 0;
+  font-style: italic;
 }
