@@ -1,16 +1,74 @@
+.category-holder {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 10px 0;
+}
+
+.icon {
+  width: 20px;
+  left: -60px;
+  position: absolute;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.icon-stat {
+  width: 25px;
+  left: -48px;
+  position: absolute;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.icon-profile {
+  width: 20px;
+  left: -53px;
+  position: absolute;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.icon-settings {
+  width: 20px;
+  left: -49px;
+  position: absolute;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 .side-nav {
   display: flex;
   flex-direction: column;
   background-color: #1e2128;
   width: 20%;
-  padding: 1em;
+  padding: 25px;
   color: white;
   height: 100%;
 }
 
 .side-nav a {
-  color: rgba(255, 255, 255, 0.5);
-  margin: 20px 0 20px 0;
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  height: 30px;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #242633;
   text-decoration: none;
   user-drag: none;
   -webkit-user-drag: none;
@@ -18,18 +76,41 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.multi-button {
+  margin: 10px 0 10px 0;
 }
 
 .active {
-  color: rgb(255, 255, 255);
+  background-color: royalblue !important;
 }
 
 .logo {
-  width: 60%;
+  width: 35%;
   user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+p {
+  color: #63666d;
+  font-size: 14px;
+}
+
+.button-text {
+  margin: 0;
+  color: white;
+}
+.middle {
+  display: flex;
+  align-items: center;
+  height: min-content;
+  justify-content: center;
+  position: relative;
 }
