@@ -51,9 +51,16 @@
 
 .history {
   display: flex;
-  width: 220px;
+  flex-direction: column;
+  width: 65%;
   justify-content: space-between;
   align-self: flex-start;
+}
+
+.selectors {
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
 }
 
 .select_box {
