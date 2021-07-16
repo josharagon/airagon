@@ -1,13 +1,14 @@
 import "./CheckoutCard.css";
+import travis from "../../img/aj6.jpg";
 
 const CheckoutCard = () => {
   return (
     <article>
-      <h1>img</h1>
+      <img src={travis}></img>
       <div className="details">
-        <p>product name</p>
-        <p>store name</p>
-        <p>cost on date</p>
+        <p id="product">Travis Scott AJ6</p>
+        <p id="store">Footlocker CA</p>
+        <p id="cost">Purchased for $200 on 11.02.2021</p>
       </div>
     </article>
   );

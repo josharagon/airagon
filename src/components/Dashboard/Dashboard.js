@@ -2,6 +2,8 @@ import "./Dashboard.css";
 import down from "../../img/down.png";
 import stock from "../../img/stock-img.jpg";
 
+import CheckoutCard from "../CheckoutCard/CheckoutCard";
+
 const Dashboard = () => {
   return (
     <section className="dashboard">
@@ -37,7 +39,22 @@ const Dashboard = () => {
 
         <div className="checkout-feed">
           <h1>Checkout Feed</h1>
-          <div></div>
+          <div className="success-feed">
+            <CheckoutCard />
+            <CheckoutCard />
+            <CheckoutCard />
+            <CheckoutCard />
+            <CheckoutCard />
+            <CheckoutCard />
+            <CheckoutCard />
+            <CheckoutCard />
+            <CheckoutCard />
+            <CheckoutCard />
+            <CheckoutCard />
+            <CheckoutCard />
+            <CheckoutCard />
+            <CheckoutCard />
+          </div>
         </div>
       </div>
     </section>

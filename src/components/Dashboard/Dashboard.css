@@ -53,6 +53,7 @@
   display: flex;
   width: 220px;
   justify-content: space-between;
+  align-self: flex-start;
 }
 
 .select_box {
@@ -94,8 +95,36 @@
 
 .checkout-feed h1 {
   text-align: left;
+  margin: 0 0 20px 0;
 }
 
 .checkout-feed {
-  width: 33%;
+  width: 35%;
+}
+
+.success-feed {
+  overflow-y: scroll;
+  height: 530px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(83, 4, 255);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(83, 4, 255);
 }

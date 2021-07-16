@@ -1,0 +1,36 @@
+article {
+  height: 65px;
+  display: flex;
+  background-color: #1e2227;
+  justify-content: space-between;
+  border-radius: 6px;
+  padding: 5px 15px 5px 15px;
+  align-items: center;
+  margin: 5px 4px 5px 0px;
+}
+
+article > img {
+  border-radius: 4px;
+  height: 57px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details p {
+  margin: 0;
+  text-align: end;
+  font-size: 14px;
+}
+
+#product,
+#store {
+  color: white;
+}
+
+#cost {
+  font-size: 12px;
+}
