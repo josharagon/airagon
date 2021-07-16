@@ -39,6 +39,35 @@ const Dashboard = () => {
             </div>
           </div>
           <Chart />
+          <div className="stats">
+            <div className="checkouts">
+              <p className="stat-title">Checkouts</p>
+              <div className="number-perc">
+                <p className="stat-number">400</p>
+                <span id="perc-diff">+60%</span>
+              </div>
+              <p className="compared">Compared to 300</p>
+            </div>
+            <div className="spent">
+              <p className="stat-title">Money Spent</p>
+              <div className="number-perc">
+                <div className="align-symbol">
+                  <span id="dollar">$</span>
+                  <p className="stat-number">0</p>
+                </div>
+                <span id="perc-diff">+60%</span>
+              </div>
+              <p className="compared">Compared to $300</p>
+            </div>
+            <div className="declines">
+              <p className="stat-title">Checkouts</p>
+              <div className="number-perc">
+                <p className="stat-number">5600</p>
+                <span id="perc-diff">+60%</span>
+              </div>
+              <p className="compared">Compared to 300</p>
+            </div>
+          </div>
         </div>
         <div className="checkout-feed">
           <h1>Checkout Feed</h1>

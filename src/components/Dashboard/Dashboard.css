@@ -52,7 +52,7 @@
 .history {
   display: flex;
   flex-direction: column;
-  width: 65%;
+  width: 60%;
   justify-content: space-between;
   align-self: flex-start;
 }
@@ -134,4 +134,55 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(83, 4, 255);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.checkouts {
+  display: flex;
+  flex-direction: column;
+}
+
+.number-perc {
+  display: flex;
+  align-items: center;
+}
+
+.stat-number {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  margin: 0 7px 0 0;
+}
+
+#perc-diff {
+  color: rgb(156, 233, 156);
+  font-size: 15px;
+}
+
+.stat-title {
+  font-size: 18px;
+  margin: 10px 0px 5px 0px;
+}
+
+.compared {
+  margin: 5px 0 0 0;
+}
+
+#dollar {
+  font-size: 14px;
+}
+
+.align-symbol {
+  position: relative;
+  display: inline-block;
+  padding-left: 12px;
+}
+
+.align-symbol span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }

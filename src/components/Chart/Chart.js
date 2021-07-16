@@ -1,5 +1,6 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
+import "./Chart.css";
 
 const data = {
   labels: [
@@ -28,6 +29,7 @@ const data = {
 };
 
 const options = {
+  maintainAspectRatio: true,
   x: {
     ticks: {
       display: false,
@@ -43,13 +45,6 @@ const options = {
   },
 };
 
-const Chart = () => (
-  <>
-    <div className="header">
-      <h1 className="title"></h1>
-    </div>
-    <Line data={data} options={options} />
-  </>
-);
+const Chart = () => <Line data={data} width={5} height={3} options={options} />;
 
 export default Chart;
