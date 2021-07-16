@@ -78,6 +78,11 @@ const Nav = () => {
           </div>
         </NavLink>
       </div>
+      <div className="version">
+        {navigator.onLine && <span class="status online"></span>}
+        {!navigator.onLine && <span class="status offline"></span>}
+        <p>Airagon 0.0.1</p>
+      </div>
     </nav>
   );
 };

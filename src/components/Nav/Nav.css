@@ -94,3 +94,25 @@ p {
 .time {
   margin: 0;
 }
+
+.status {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.version {
+  display: flex;
+  align-items: center;
+  margin-top: 175px;
+}
+
+.online {
+  background-color: rgb(156, 233, 156);
+}
+
+.offline {
+  background-color: rgb(255, 115, 115);
+}
