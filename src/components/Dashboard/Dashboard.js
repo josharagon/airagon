@@ -43,29 +43,29 @@ const Dashboard = () => {
             <div className="checkouts">
               <p className="stat-title">Checkouts</p>
               <div className="number-perc">
-                <p className="stat-number">400</p>
-                <span id="perc-diff">+60%</span>
+                <p className="stat-number">250</p>
+                <span className="perc-diff pos">+186%</span>
               </div>
-              <p className="compared">Compared to 300</p>
+              <p className="compared">Compared to 134</p>
             </div>
             <div className="spent">
               <p className="stat-title">Money Spent</p>
               <div className="number-perc">
                 <div className="align-symbol">
                   <span id="dollar">$</span>
-                  <p className="stat-number">0</p>
+                  <p className="stat-number">1250</p>
                 </div>
-                <span id="perc-diff">+60%</span>
+                <span className="perc-diff pos">+312%</span>
               </div>
-              <p className="compared">Compared to $300</p>
+              <p className="compared">Compared to $400</p>
             </div>
             <div className="declines">
-              <p className="stat-title">Checkouts</p>
+              <p className="stat-title">Declines</p>
               <div className="number-perc">
-                <p className="stat-number">5600</p>
-                <span id="perc-diff">+60%</span>
+                <p className="stat-number">66</p>
+                <span className="perc-diff neg">-14%</span>
               </div>
-              <p className="compared">Compared to 300</p>
+              <p className="compared">Compared to 78</p>
             </div>
           </div>
         </div>
