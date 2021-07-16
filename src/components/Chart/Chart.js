@@ -1,56 +1,55 @@
 import React from "react";
-import { Chart } from "react-charts";
+import { Line } from "react-chartjs-2";
 
-const Graph = () => {
-  const data = React.useMemo(
-    () => [
-      {
-        label: "Series 1",
-        data: [
-          [0, 1],
-          [1, 2],
-          [2, 4],
-          [3, 2],
-          [4, 7],
-        ],
-      },
-      {
-        label: "Series 2",
-        data: [
-          [0, 3],
-          [1, 1],
-          [2, 5],
-          [3, 6],
-          [4, 4],
-        ],
-      },
-    ],
-    []
-  );
-
-  const axes = React.useMemo(
-    () => [
-      { primary: true, type: "linear", position: "bottom" },
-      { type: "linear", position: "left" },
-    ],
-    []
-  );
-
-  const lineChart = (
-    // A react-chart hyper-responsively and continuously fills the available
-    // space of its parent element automatically
-    <div
-      style={{
-        marginTop: "30px",
-        width: "300px",
-        height: "300px",
-      }}
-    >
-      <Chart data={data} axes={axes} />
-    </div>
-  );
-
-  return lineChart;
+const data = {
+  labels: [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ],
+  datasets: [
+    {
+      label: "# of Checkouts",
+      data: [12, 19, 10, 15, 12, 13, 15, 100],
+      fill: false,
+      backgroundColor: "rgb(83, 4, 255)",
+      borderColor: "rgb(83, 4, 255)",
+    },
+  ],
 };
 
-export default Graph;
+const options = {
+  x: {
+    ticks: {
+      display: false,
+      maxTicksLimit: 0,
+    },
+  },
+  plugins: {
+    legend: {
+      labels: {
+        usePointStyle: true,
+      },
+    },
+  },
+};
+
+const Chart = () => (
+  <>
+    <div className="header">
+      <h1 className="title"></h1>
+    </div>
+    <Line data={data} options={options} />
+  </>
+);
+
+export default Chart;

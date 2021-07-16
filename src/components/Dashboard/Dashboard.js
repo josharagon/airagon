@@ -3,7 +3,7 @@ import down from "../../img/down.png";
 import stock from "../../img/stock-img.jpg";
 
 import CheckoutCard from "../CheckoutCard/CheckoutCard";
-import Graph from "../Chart/Chart.js";
+import Chart from "../Chart/Chart.js";
 
 const Dashboard = () => {
   return (
@@ -38,7 +38,7 @@ const Dashboard = () => {
               </select>
             </div>
           </div>
-          <Graph />
+          <Chart />
         </div>
         <div className="checkout-feed">
           <h1>Checkout Feed</h1>
