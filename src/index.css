@@ -5,6 +5,9 @@ body,
   overflow: hidden;
 }
 
+#root {
+  display: flex;
+}
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
