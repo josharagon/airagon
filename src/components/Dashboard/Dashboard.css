@@ -1,13 +1,43 @@
 .dashboard {
   background-color: #1a1c21;
   width: 80%;
+  padding: 30px;
+  color: #ffffff;
 }
 
 .signed-in-user {
   height: 50px;
-  background-color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .down {
-  height: 13px;
+  height: 15px;
+}
+
+.drop-down {
+  padding: 7px 13px 5px 13px;
+  display: flex;
+  width: 180px;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #65686e;
+  border-radius: 6px;
+}
+
+.username {
+  color: rgb(255, 255, 255);
+}
+
+.username,
+.id {
+  margin: 0;
+}
+
+.pfp img {
+  width: 40px; /* width of container */
+  height: 40px; /* height of container */
+  object-fit: cover;
+  border-radius: 100%;
 }

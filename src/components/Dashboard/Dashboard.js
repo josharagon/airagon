@@ -1,5 +1,6 @@
 import "./Dashboard.css";
 import down from "../../img/down.png";
+import stock from "../../img/stock-img.jpg";
 
 const Dashboard = () => {
   return (
@@ -9,8 +10,11 @@ const Dashboard = () => {
         <div className="drop-down">
           <img className="down" src={down}></img>
           <div>
-            <p>joshcooks</p>
-            <p>#0001</p>
+            <p className="username">joshdadev</p>
+            <p className="id">#0001</p>
+          </div>
+          <div className="pfp">
+            <img src={stock}></img>
           </div>
         </div>
       </div>
