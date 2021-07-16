@@ -2,3 +2,12 @@
   background-color: #1a1c21;
   width: 80%;
 }
+
+.signed-in-user {
+  height: 50px;
+  background-color: purple;
+}
+
+.down {
+  height: 13px;
+}
