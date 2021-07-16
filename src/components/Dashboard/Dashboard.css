@@ -22,12 +22,19 @@
   width: 180px;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid #65686e;
+  border: 2px solid #63666d;
   border-radius: 6px;
 }
 
 .username {
   color: rgb(255, 255, 255);
+}
+
+.main-feed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 .username,
@@ -42,9 +49,53 @@
   border-radius: 100%;
 }
 
-#category {
-  background-color: transparent;
-  color: #65686e;
-  border-radius: 6px;
-  padding: 8px;
+.history {
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
+}
+
+.select_box {
+  width: 110px;
+  overflow: hidden;
+  border: 1px solid #63666d;
+  position: relative;
+  background-color: #1e2227;
+  padding: 3px 5px;
+  border-radius: 4px;
+  height: 50%;
+}
+.select_box:after {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #63666d;
+  position: absolute;
+  top: 40%;
+  right: 15px;
+  content: "";
+  z-index: 98;
+}
+.select_box select {
+  width: 220px;
+  border: 0;
+  position: relative;
+  z-index: 99;
+  background: none;
+  color: #63666d;
+  outline: none;
+  font-family: inherit;
+}
+
+.select_box + .date {
+  width: 65px;
+}
+
+.checkout-feed h1 {
+  text-align: left;
+}
+
+.checkout-feed {
+  width: 33%;
 }

@@ -18,19 +18,28 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className="history">
-        <select name="type" id="category">
-          <option value="volvo">Checkouts</option>
-          <option value="saab">Money Spent</option>
-          <option value="mercedes">Declines</option>
-        </select>
-        <select name="type" id="category">
-          <option value="volvo">365d</option>
-          <option value="saab">30d</option>
-          <option value="mercedes">7d</option>
-        </select>
+      <div className="main-feed">
+        <div className="history">
+          <div class="select_box">
+            <select>
+              <option>Checkouts</option>
+              <option>$ Spent</option>
+            </select>
+          </div>
+          <div class="select_box date">
+            <select>
+              <option>365d</option>
+              <option>30d</option>
+              <option>7d</option>
+            </select>
+          </div>
+        </div>
+
+        <div className="checkout-feed">
+          <h1>Checkout Feed</h1>
+          <div></div>
+        </div>
       </div>
-      <div className="checkout-feed"></div>
     </section>
   );
 };
