@@ -16,7 +16,7 @@
   position: absolute;
 }
 .icon-profile {
-  width: 20px;
+  width: 18px;
   left: -53px;
   position: absolute;
 }
@@ -56,7 +56,7 @@
 }
 
 .active {
-  background-color: royalblue !important;
+  background-color: rgb(83, 4, 255) !important;
 }
 
 .logo {
