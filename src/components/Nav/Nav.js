@@ -1,5 +1,6 @@
 import "./Nav.css";
 import logo from "../../img/aragonaio1.png";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -8,6 +9,15 @@ const Nav = () => {
       <h4>Tasks</h4>
       <h4>Profiles</h4>
       <h4>Proxies</h4>
+      <NavLink exact={true} activeClassName="is-active" to="/">
+        Tasks
+      </NavLink>
+      <NavLink activeClassName="is-active" to="/profiles">
+        Profiles
+      </NavLink>
+      <NavLink activeClassName="is-active" to="/about">
+        Proxies
+      </NavLink>
     </nav>
   );
 };
