@@ -5,13 +5,24 @@ import folder from "../../img/folder.png";
 import profile from "../../img/profile.png";
 import proxy from "../../img/proxy.png";
 import settings from "../../img/settings.png";
+import { useElapsedTime } from "use-elapsed-time";
 
 import { NavLink } from "react-router-dom";
 
 const Nav = () => {
+  const { elapsedTime } = useElapsedTime({ isPlaying: true });
+
   return (
     <nav className="side-nav">
-      <img className="logo" src={logo}></img>
+      <div className="logo-container">
+        <img className="logo" src={logo}></img>
+        <div className="title-time">
+          <h3 className="title">Airagon</h3>
+          <p className="time">
+            {new Date(elapsedTime * 1000).toISOString().substr(11, 8)}
+          </p>
+        </div>
+      </div>
       <div className="category-holder">
         <p>General</p>
         <NavLink exact to={"/"} activeStyle={{ color: "white" }}>

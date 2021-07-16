@@ -8,47 +8,23 @@
   width: 20px;
   left: -60px;
   position: absolute;
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 .icon-stat {
   width: 25px;
   left: -48px;
   position: absolute;
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 .icon-profile {
   width: 20px;
   left: -53px;
   position: absolute;
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 .icon-settings {
   width: 20px;
   left: -49px;
   position: absolute;
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 .side-nav {
@@ -70,12 +46,7 @@
   text-align: center;
   background-color: #242633;
   text-decoration: none;
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+
   align-items: center;
   justify-content: center;
 }
@@ -89,13 +60,7 @@
 }
 
 .logo {
-  width: 35%;
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+  height: 60px;
 }
 
 p {
@@ -113,4 +78,19 @@ p {
   height: min-content;
   justify-content: center;
   position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.title-time {
+  display: flex;
+  flex-direction: column;
+}
+
+.title,
+.time {
+  margin: 0;
 }
