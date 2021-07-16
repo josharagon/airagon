@@ -1,29 +1,18 @@
 import "./Nav.css";
 import logo from "../../img/aragonaio1.png";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
     <nav className="side-nav">
-      <img src={logo}></img>
-      <NavLink
-        exact
-        to={"/"}
-        activeStyle={{ color: "white" }}
-        activeClassName="active"
-      >
-        Tasks
+      <img className="logo" src={logo}></img>
+      <NavLink exact to={"/"} activeStyle={{ color: "white" }}>
+        Dashboard
       </NavLink>
-      <NavLink
-        activeStyle={{ color: "white" }}
-        to="/profiles"
-      >
+      <NavLink exact to={"/profiles"} activeStyle={{ color: "white" }}>
         Profiles
       </NavLink>
-      <NavLink
-        activeStyle={{ color: "white" }}
-        to="/about"
-      >
+      <NavLink exact to={"/about"} activeStyle={{ color: "white" }}>
         Proxies
       </NavLink>
     </nav>
