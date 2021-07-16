@@ -18,6 +18,19 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      <div className="history">
+        <select name="type" id="category">
+          <option value="volvo">Checkouts</option>
+          <option value="saab">Money Spent</option>
+          <option value="mercedes">Declines</option>
+        </select>
+        <select name="type" id="category">
+          <option value="volvo">365d</option>
+          <option value="saab">30d</option>
+          <option value="mercedes">7d</option>
+        </select>
+      </div>
+      <div className="checkout-feed"></div>
     </section>
   );
 };
