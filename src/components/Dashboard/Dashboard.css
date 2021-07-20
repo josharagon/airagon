@@ -1,6 +1,5 @@
 .dashboard {
   background-color: #1a1c21;
-  width: 80%;
   padding: 30px;
   color: #ffffff;
 }
@@ -34,7 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .username,
@@ -111,10 +110,8 @@
 
 .success-feed {
   overflow-y: scroll;
-  height: 645px;
-  /* border-radius: 6px;
-  border: 1px solid rgb(255, 255, 255);
-  padding: 2px; */
+  height: 550px;
+  border-radius: 6px;
 }
 
 /* width */
@@ -142,6 +139,7 @@
 .stats {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 4px;
 }
 
 .checkouts {
@@ -156,12 +154,12 @@
 
 .stat-number {
   color: rgb(255, 255, 255);
-  font-size: 25px;
+  font-size: 20px;
   margin: 0 8px 0 0;
 }
 
 .perc-diff {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .pos {
@@ -173,13 +171,13 @@
 }
 
 .stat-title {
-  font-size: 18px;
+  font-size: 13px;
   margin: 10px 0px 5px 0px;
 }
 
 .compared {
   margin: 5px 0 0 0;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 #dollar {
@@ -206,7 +204,7 @@
 }
 
 .update-button h3 {
-  font-size: 20px;
+  font-size: 17px;
   color: #9e9fa4;
 }
 
@@ -214,7 +212,7 @@
   background-color: rgb(83, 4, 255);
   color: rgb(255, 255, 255);
   border: none;
-  padding: 10px;
+  padding: 9px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 13px;
@@ -223,8 +221,10 @@
 .previous-updates {
   background-color: #1e2227;
   width: 470px;
+  height: 111px;
   border-radius: 6px;
-  padding: 10px;
+  padding: 4px 10px 10px 10px;
+  overflow-y: auto;
 }
 .update-text {
   color: #9e9fa4;

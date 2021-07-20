@@ -36,7 +36,7 @@ const Nav = () => {
         <p>Setup</p>
         <NavLink
           exact
-          to={"/Tasks"}
+          to={"/tasks"}
           activeStyle={{ color: "white" }}
           className="multi-button"
         >
@@ -59,7 +59,7 @@ const Nav = () => {
         </NavLink>
         <NavLink
           exact
-          to={"/Proxies"}
+          to={"/proxies"}
           activeStyle={{ color: "white" }}
           className="multi-button"
         >
@@ -81,7 +81,7 @@ const Nav = () => {
       <div className="version">
         {navigator.onLine && <span class="status online"></span>}
         {!navigator.onLine && <span class="status offline"></span>}
-        <p>Airagon 0.0.1</p>
+        <p className="current-version">Airagon 0.0.3</p>
       </div>
     </nav>
   );
