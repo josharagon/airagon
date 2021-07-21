@@ -2,6 +2,7 @@ import "./App.css";
 
 import Nav from "../Nav/Nav.js";
 import Dash from "../Dashboard/Dashboard.js";
+import Tasks from "../Tasks/Tasks.js";
 import { Route, Switch } from "react-router";
 
 const App = () => {
@@ -11,6 +12,9 @@ const App = () => {
       <Switch>
         <Route exact path="/">
           <Dash />
+        </Route>
+        <Route exact path="/tasks">
+          <Tasks />
         </Route>
         <Route eaxct path="/profiles">
           <h1>profiles</h1>

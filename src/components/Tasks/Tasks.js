@@ -1,0 +1,44 @@
+import "./Tasks.css";
+import down from "../../img/down.png";
+import stock from "../../img/stock-img.jpg";
+
+const Tasks = () => {
+  return (
+    <section className="tasks">
+      <div className="task-user">
+        <h1>Tasks</h1>
+        <div className="signed-user">
+          <div>
+            <p className="username">joshdadev</p>
+            <p className="id">#0001</p>
+          </div>
+          <div className="pfp">
+            <img src={stock}></img>
+          </div>
+        </div>
+      </div>
+      <div className="task-editor">
+        <div className="task-count">
+          <div id="task-num">
+            <p id="count">400</p>
+            <p className="mini-title">taks</p>
+          </div>
+          <div id="task-select">
+            <p id="count">0</p>
+            <p className="mini-title">taks seleted</p>
+          </div>
+        </div>
+        <div id="search-task">
+          <div>
+            <input type="search" placeholder="Search" />
+          </div>
+          <button>
+            <span id="add">+</span> New Task
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Tasks;
