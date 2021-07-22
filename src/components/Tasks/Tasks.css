@@ -96,3 +96,7 @@ input:focus {
   color: #ffffff;
   font-size: 12px;
 }
+
+.task-list {
+  height: 100vh;
+}
