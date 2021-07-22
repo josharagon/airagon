@@ -1,10 +1,7 @@
 import "./Tasks.css";
 import down from "../../img/down.png";
 import stock from "../../img/stock-img.jpg";
-import play from "../../img/play.png";
-import pause from "../../img/pause.png";
-import pencil from "../../img/pencil.png";
-import trash from "../../img/delete.png";
+import TaskHolder from "../TaskHolder/TaskHolder";
 
 const Tasks = () => {
   return (
@@ -50,30 +47,7 @@ const Tasks = () => {
           <p>Status</p>
           <p>Actions</p>
         </div>
-        <div className="task-body">
-          <div className="task-stacked">
-            <p>Store Name</p>
-            <p className="sub-text">Checkout Type</p>
-          </div>
-          <div className="task-stacked">
-            <p>Product name is too long too long too long</p>
-            <p className="sub-text">Size</p>
-          </div>
-          <div>
-            <p>Profile Name</p>
-          </div>
-          <div>
-            <p>Proxies</p>
-          </div>
-          <div>
-            <p>Status</p>
-          </div>
-          <div className="actions">
-            <img src={play}></img>
-            <img src={pencil}></img>
-            <img src={trash}></img>
-          </div>
-        </div>
+        <TaskHolder />
       </div>
     </section>
   );

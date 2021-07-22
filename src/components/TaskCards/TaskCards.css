@@ -1,0 +1,38 @@
+.task-body {
+  display: grid;
+  grid-template-columns: 1.25fr 2fr 1fr 1fr 1.75fr 1fr;
+  background-color: #1e2128;
+  padding: 4px 12px;
+  margin-top: 20px;
+  border-radius: 4px;
+  align-items: center;
+  overflow: hidden;
+  grid-gap: 25px;
+}
+
+.task-body p {
+  color: #ffffff;
+  font-size: 11px;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.sub-text {
+  color: #787a81 !important;
+  font-size: 11px !important;
+  margin: 0;
+}
+
+.task-stacked {
+  overflow: hidden;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.actions img {
+  width: 15px;
+}
