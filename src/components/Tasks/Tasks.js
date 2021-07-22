@@ -25,10 +25,10 @@ const Tasks = () => {
             <p id="count">400</p>
             <p className="mini-title">Tasks</p>
           </div>
-          <div id="task-select">
+          {/* <div id="task-select">
             <p id="count">0</p>
             <p className="mini-title">Tasks Selected</p>
-          </div>
+          </div> */}
         </div>
         <div id="search-task">
           <div className="search-tasks">
