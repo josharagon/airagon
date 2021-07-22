@@ -37,6 +37,38 @@ const Tasks = () => {
           </button>
         </div>
       </div>
+      <div className="task-list">
+        <div className="task-header">
+          <p>Store</p>
+          <p>Product</p>
+          <p>Profile</p>
+          <p>Proxies</p>
+          <p>Status</p>
+          <p>Actions</p>
+        </div>
+        <div className="task-body">
+          <div className="task-stacked">
+            <p>Store Name</p>
+            <p className="sub-text">Checkout Type</p>
+          </div>
+          <div className="task-stacked">
+            <p>Product Name</p>
+            <p className="sub-text">Size</p>
+          </div>
+          <div>
+            <p>Profile Name</p>
+          </div>
+          <div>
+            <p>Proxies</p>
+          </div>
+          <div>
+            <p>Status</p>
+          </div>
+          <div>
+            <p>Actions</p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

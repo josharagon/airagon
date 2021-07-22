@@ -80,3 +80,39 @@ input:focus {
   position: inherit;
   margin: 0 6px 0 0;
 }
+
+.task-header {
+  display: grid;
+  grid-template-columns: 1.25fr 2fr 1fr 1fr 1.75fr 1fr;
+  background-color: #1e1f24;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.task-header p {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.task-body {
+  display: grid;
+  grid-template-columns: 1.25fr 2fr 1fr 1fr 1.75fr 1fr;
+  background-color: #1e2128;
+  padding: 4px 12px;
+  margin-top: 28px;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.task-body p {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 0;
+}
+
+.sub-text {
+  color: #787a81 !important;
+  font-size: 11px !important;
+  margin: 0;
+}
