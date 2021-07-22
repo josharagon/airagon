@@ -37,6 +37,9 @@
 #task-num,
 #task-select {
   display: flex;
+  margin-right: 2px;
+  white-space: nowrap;
+  margin-right: 15px;
 }
 
 #search-task {
@@ -99,4 +102,26 @@ input:focus {
 
 .task-list {
   height: 100vh;
+}
+
+#count {
+  color: rgb(83, 4, 255) !important;
+  background-color: rgba(84, 4, 255, 0.108);
+  margin-right: 5px;
+  padding: 2px;
+}
+
+#mini-title {
+  margin-left: 5px;
+}
+
+.search-tasks {
+  position: relative;
+}
+
+.search-tasks img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
 }

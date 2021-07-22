@@ -1,5 +1,6 @@
 import "./Tasks.css";
 import down from "../../img/down.png";
+import search from "../../img/search.png";
 import stock from "../../img/stock-img.jpg";
 import TaskHolder from "../TaskHolder/TaskHolder";
 
@@ -22,15 +23,16 @@ const Tasks = () => {
         <div className="task-count">
           <div id="task-num">
             <p id="count">400</p>
-            <p className="mini-title">taks</p>
+            <p className="mini-title">Tasks</p>
           </div>
           <div id="task-select">
             <p id="count">0</p>
-            <p className="mini-title">taks seleted</p>
+            <p className="mini-title">Tasks Selected</p>
           </div>
         </div>
         <div id="search-task">
-          <div>
+          <div className="search-tasks">
+            <img src={search}></img>
             <input type="search" placeholder="Search" />
           </div>
           <button>

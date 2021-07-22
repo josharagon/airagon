@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1.25fr 2fr 1fr 1fr 1.75fr 1fr;
   background-color: #1e2128;
-  padding: 4px 12px;
+  padding: 8px 12px;
   margin-top: 10px;
   border-radius: 4px;
   align-items: center;
@@ -35,4 +35,12 @@
 
 .actions img {
   width: 15px;
+}
+
+#active {
+  color: rgb(156, 233, 156);
+}
+
+#inProgess {
+  color: rgb(255, 255, 255);
 }

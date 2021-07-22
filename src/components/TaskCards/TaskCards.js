@@ -22,7 +22,7 @@ const TaskCards = ({ task }) => {
         <p>{task.proxy}</p>
       </div>
       <div>
-        <p>{task.status}</p>
+        <p id="active">{task.status}</p>
       </div>
       <div className="actions">
         <img src={play}></img>
