@@ -3,6 +3,7 @@ import "./App.css";
 import Nav from "../Nav/Nav.js";
 import Dash from "../Dashboard/Dashboard.js";
 import Tasks from "../Tasks/Tasks.js";
+import Profiles from "../Profiles/Profiles.js";
 import { Route, Switch } from "react-router";
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
           <Tasks />
         </Route>
         <Route eaxct path="/profiles">
-          <h1>profiles</h1>
+          <Profiles />
         </Route>
         <Route exact path="/proxies">
           <h1>proxie</h1>
