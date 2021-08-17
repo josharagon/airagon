@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Modal from "react-modal";
-import "./ProfileModal.css";
+import "./ProfileModal.scss";
 
 const customStyles = {
   content: {
     background: "#1a1c21",
+  },
+  overlay: {
+    background: "rgba(28, 28, 28, 0.75)",
   },
 };
 
@@ -26,6 +29,7 @@ const ProfileModal = () => {
     <div>
       <button onClick={openModal}>Open Modal</button>
       <Modal
+        closeTimeoutMS={500}
         style={customStyles}
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -43,29 +47,38 @@ const ProfileModal = () => {
               <div className="shipping">
                 <h4 className="new-profile-header">shipping Info</h4>
                 <div className="names">
-                  <input placeholder="First Name" />
-                  <input placeholder="Last Name" />
+                  <input className="profile-input" placeholder="First Name" />
+                  <input className="profile-input" placeholder="Last Name" />
                 </div>
-                <input placeholder="Email" />
-                <input placeholder="Phone" />
-                <input placeholder="Street Address" />
+                <input className="profile-input" placeholder="Email" />
+                <input className="profile-input" placeholder="Phone" />
+                <input className="profile-input" placeholder="Street Address" />
                 <div>
-                  <input placeholder="City" />
-                  <input placeholder="State" />
+                  <input className="profile-input" placeholder="City" />
+                  <input className="profile-input" placeholder="State" />
                 </div>
                 <div>
-                  <input placeholder="Zip Code" />
-                  <input placeholder="Country" />
+                  <input className="profile-input" placeholder="Zip Code" />
+                  <input className="profile-input" placeholder="Country" />
                 </div>
               </div>
               <div className="card">
                 <h4 className="new-profile-header">card information</h4>
-                <input placeholder="Card Number"></input>
+                <input
+                  className="profile-input"
+                  placeholder="Card Number"
+                ></input>
                 <div>
-                  <input placeholder="Card Month"></input>
-                  <input placeholder="Card Year"></input>
+                  <input
+                    className="profile-input"
+                    placeholder="Card Month"
+                  ></input>
+                  <input
+                    className="profile-input"
+                    placeholder="Card Year"
+                  ></input>
                 </div>
-                <input placeholder="CVV"></input>
+                <input className="profile-input" placeholder="CVV"></input>
               </div>
             </div>
             <div className="card-information">
@@ -73,27 +86,32 @@ const ProfileModal = () => {
                 <div className="shipping">
                   <h4 className="new-profile-header">billing</h4>
                   <div className="names">
-                    <input placeholder="First Name" />
-                    <input placeholder="Last Name" />
+                    <input className="profile-input" placeholder="First Name" />
+                    <input className="profile-input" placeholder="Last Name" />
                   </div>
-                  <input placeholder="Email" />
-                  <input placeholder="Phone" />
-                  <input placeholder="Street Address" />
+                  <input className="profile-input" placeholder="Email" />
+                  <input className="profile-input" placeholder="Phone" />
+                  <input
+                    className="profile-input"
+                    placeholder="Street Address"
+                  />
                   <div>
-                    <input placeholder="City" />
-                    <input placeholder="State" />
+                    <input className="profile-input" placeholder="City" />
+                    <input className="profile-input" placeholder="State" />
                   </div>
                   <div>
-                    <input placeholder="Zip Code" />
-                    <input placeholder="Country" />
+                    <input className="profile-input" placeholder="Zip Code" />
+                    <input className="profile-input" placeholder="Country" />
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="bottom-section">
                 <h4 className="new-profile-header">profile</h4>
-                <input placeholder="Profile Name"></input>
-                <button>Save</button>
-                <button>Clear</button>
+                <input
+                  className="profile-input"
+                  placeholder="Profile Name"
+                ></input>
+                <a className="btn btn-2">Save</a>
               </div>
             </div>
           </div>
