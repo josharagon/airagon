@@ -127,3 +127,12 @@ input:focus {
   left: 5px;
   width: 15px;
 }
+
+.card-info {
+  display: flex;
+}
+
+.selected-profile {
+  background-color: #1e1f24;
+  width: 50px;
+}

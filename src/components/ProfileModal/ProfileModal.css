@@ -1,0 +1,26 @@
+.address-information {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.shipping {
+  display: flex;
+  flex-direction: column;
+}
+
+.names {
+  display: flex;
+}
+
+.new-profile-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-modal {
+  background-color: transparent;
+  border: none;
+}

@@ -2,6 +2,7 @@ import "./Profiles.css";
 
 import search from "../../img/search.png";
 import stock from "../../img/stock-img.jpg";
+import ProfileModal from "../ProfileModal/ProfileModal";
 
 const Profiles = () => {
   return (
@@ -24,10 +25,6 @@ const Profiles = () => {
             <p id="count">400</p>
             <p className="mini-title">Tasks</p>
           </div>
-          {/* <div id="task-select">
-          <p id="count">0</p>
-          <p className="mini-title">Tasks Selected</p>
-        </div> */}
         </div>
         <div id="search-task">
           <div className="search-tasks">
@@ -35,10 +32,24 @@ const Profiles = () => {
             <input type="search" placeholder="Search" />
           </div>
           <button>
-            <span id="add">+</span> New Task
+            <span id="add">+</span> New Profile
           </button>
         </div>
       </div>
+      {/* <div className="card-info">
+        <div className="selected-profile"></div>
+        <div>
+          <h4>Card Information</h4>
+          <input placeholder="Card Number"></input>
+          <div>
+            <input placeholder="Card Month"></input>
+            <input placeholder="Card Year"></input>
+          </div>
+          <input placeholder="CVV"></input>
+        </div>
+      </div> */}
+
+      <ProfileModal />
     </section>
   );
 };
