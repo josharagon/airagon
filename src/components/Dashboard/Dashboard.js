@@ -9,7 +9,7 @@ const Dashboard = () => {
   return (
     <section className="dashboard">
       <div className="signed-in-user">
-        <h2>Good Morning, Josh</h2>
+        <h2>Good Morning, Josh!</h2>
         <div className="drop-down">
           <img className="down" src={down}></img>
           <div>

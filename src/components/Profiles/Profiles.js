@@ -3,6 +3,7 @@ import "./Profiles.css";
 import search from "../../img/search.png";
 import stock from "../../img/stock-img.jpg";
 import ProfileModal from "../ProfileModal/ProfileModal";
+import ProfileCard from "../ProfileCard/ProfileCard.js";
 
 const Profiles = () => {
   return (
@@ -34,18 +35,23 @@ const Profiles = () => {
           <ProfileModal />
         </div>
       </div>
-      {/* <div className="card-info">
-        <div className="selected-profile"></div>
-        <div>
-          <h4>Card Information</h4>
-          <input placeholder="Card Number"></input>
-          <div>
-            <input placeholder="Card Month"></input>
-            <input placeholder="Card Year"></input>
-          </div>
-          <input placeholder="CVV"></input>
-        </div>
-      </div> */}
+      <div className="profile-card-holder">
+        <ProfileCard cardNumber={6} />
+        <ProfileCard cardNumber={3} />
+        <ProfileCard cardNumber={4} />
+        <ProfileCard cardNumber={5} />
+        <ProfileCard cardNumber={null} />
+        <ProfileCard cardNumber={6} />
+        <ProfileCard cardNumber={3} />
+        <ProfileCard cardNumber={4} />
+        <ProfileCard cardNumber={5} />
+        <ProfileCard cardNumber={null} />
+        <ProfileCard cardNumber={6} />
+        <ProfileCard cardNumber={3} />
+        <ProfileCard cardNumber={4} />
+        <ProfileCard cardNumber={5} />
+        <ProfileCard cardNumber={null} />
+      </div>
     </section>
   );
 };
