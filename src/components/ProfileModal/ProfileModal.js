@@ -28,7 +28,9 @@ const ProfileModal = () => {
 
   return (
     <div>
-      <button onClick={openModal}>Open Modal</button>
+      <button onClick={openModal}>
+        <span id="add">+</span> New Profile
+      </button>
       <Modal
         closeTimeoutMS={500}
         style={customStyles}

@@ -31,9 +31,7 @@ const Profiles = () => {
             <img src={search}></img>
             <input type="search" placeholder="Search" />
           </div>
-          <button>
-            <span id="add">+</span> New Profile
-          </button>
+          <ProfileModal />
         </div>
       </div>
       {/* <div className="card-info">
@@ -48,8 +46,6 @@ const Profiles = () => {
           <input placeholder="CVV"></input>
         </div>
       </div> */}
-
-      <ProfileModal />
     </section>
   );
 };
