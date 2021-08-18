@@ -33,6 +33,7 @@
   display: flex;
   justify-content: space-around;
   height: 100%;
+  align-items: flex-start;
 }
 
 .new-profile-header,
@@ -68,6 +69,11 @@
   outline: none;
 }
 
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+}
+
 .bottom-section button {
   background-color: rgb(83, 4, 255);
   font-weight: 500;
@@ -77,4 +83,8 @@
   height: 20px;
   width: 90px;
   margin: 5px;
+}
+
+#add-profile-heading-one {
+  margin: 0px;
 }

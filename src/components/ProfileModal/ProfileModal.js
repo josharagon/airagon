@@ -6,6 +6,7 @@ import "./ProfileModal.scss";
 const customStyles = {
   content: {
     background: "#1a1c21",
+    overflow: "hidden",
   },
   overlay: {
     background: "rgba(28, 28, 28, 0.75)",
@@ -37,7 +38,7 @@ const ProfileModal = () => {
       >
         <div className="modal-content">
           <div className="new-profile-header">
-            <h1>add new profile</h1>
+            <h1 id="add-profile-heading-one">add new profile</h1>
             <button onClick={closeModal} className="close-modal">
               &#10006;
             </button>
@@ -53,14 +54,10 @@ const ProfileModal = () => {
                 <input className="profile-input" placeholder="Email" />
                 <input className="profile-input" placeholder="Phone" />
                 <input className="profile-input" placeholder="Street Address" />
-                <div>
-                  <input className="profile-input" placeholder="City" />
-                  <input className="profile-input" placeholder="State" />
-                </div>
-                <div>
-                  <input className="profile-input" placeholder="Zip Code" />
-                  <input className="profile-input" placeholder="Country" />
-                </div>
+                <input className="profile-input" placeholder="City" />
+                <input className="profile-input" placeholder="State" />
+                <input className="profile-input" placeholder="Zip Code" />
+                <input className="profile-input" placeholder="Country" />
               </div>
               <div className="card">
                 <h4 className="new-profile-header">card information</h4>
@@ -95,14 +92,10 @@ const ProfileModal = () => {
                     className="profile-input"
                     placeholder="Street Address"
                   />
-                  <div>
-                    <input className="profile-input" placeholder="City" />
-                    <input className="profile-input" placeholder="State" />
-                  </div>
-                  <div>
-                    <input className="profile-input" placeholder="Zip Code" />
-                    <input className="profile-input" placeholder="Country" />
-                  </div>
+                  <input className="profile-input" placeholder="City" />
+                  <input className="profile-input" placeholder="State" />
+                  <input className="profile-input" placeholder="Zip Code" />
+                  <input className="profile-input" placeholder="Country" />
                 </div>
               </div>
               <div className="bottom-section">
@@ -111,7 +104,7 @@ const ProfileModal = () => {
                   className="profile-input"
                   placeholder="Profile Name"
                 ></input>
-                <a className="btn btn-2">Save</a>
+                <button>Save</button>
               </div>
             </div>
           </div>
