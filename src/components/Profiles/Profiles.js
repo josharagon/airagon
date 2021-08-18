@@ -23,8 +23,8 @@ const Profiles = () => {
       <div className="task-editor">
         <div className="task-count">
           <div id="task-num">
-            <p id="count">400</p>
-            <p className="mini-title">Tasks</p>
+            <p id="count">15</p>
+            <p className="mini-title">profiles</p>
           </div>
         </div>
         <div id="search-task">

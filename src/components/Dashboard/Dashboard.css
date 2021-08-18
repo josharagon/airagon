@@ -216,6 +216,7 @@
   border-radius: 8px;
   font-weight: 600;
   font-size: 13px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .previous-updates {
@@ -225,6 +226,7 @@
   border-radius: 6px;
   padding: 4px 10px 10px 10px;
   overflow-y: auto;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 .update-text {
   color: #9e9fa4;
