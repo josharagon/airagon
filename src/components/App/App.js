@@ -1,5 +1,6 @@
 import "./App.css";
 
+import { useState } from "react";
 import Nav from "../Nav/Nav.js";
 import Dash from "../Dashboard/Dashboard.js";
 import Tasks from "../Tasks/Tasks.js";
@@ -7,6 +8,13 @@ import Profiles from "../Profiles/Profiles.js";
 import { Route, Switch } from "react-router";
 
 const App = () => {
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    tasks: [],
+    profiles: [],
+  });
+
   return (
     <>
       <Nav />
