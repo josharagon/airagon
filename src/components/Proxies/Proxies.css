@@ -1,0 +1,40 @@
+.proxy-container {
+  height: 100%;
+  width: 70.2%;
+  background-color: #1a1c21;
+  padding: 30px;
+  /* display: flex; */
+}
+
+.proxy-header {
+  display: grid;
+  grid-template-columns: 1.25fr 2fr 1fr 1fr 1.75fr 1fr;
+  background-color: #1e1f24;
+  padding: 8px 12px;
+  margin-top: 5px;
+  grid-gap: 25px;
+
+  border-radius: 4px;
+}
+
+.proxy-header p {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+#addProxy {
+  background-color: rgb(83, 4, 255);
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  height: 20px;
+  width: 90px;
+  margin: 5px 5px 25px 5px;
+}
+
+.add-new-holder {
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+}

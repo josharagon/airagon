@@ -6,6 +6,7 @@ import Dash from "../Dashboard/Dashboard.js";
 import Tasks from "../Tasks/Tasks.js";
 import Profiles from "../Profiles/Profiles.js";
 import { Route, Switch } from "react-router";
+import Proxies from "../Proxies/Proxies";
 
 const App = () => {
   const [user, setUser] = useState({
@@ -17,8 +18,8 @@ const App = () => {
 
   return (
     <>
-      <Nav />
-      <Switch>
+      <Nav className="navnav" />
+      <Switch className="switcharoo">
         <Route exact path="/">
           <Dash />
         </Route>
@@ -29,7 +30,7 @@ const App = () => {
           <Profiles />
         </Route>
         <Route exact path="/proxies">
-          <h1>proxie</h1>
+          <Proxies />
         </Route>
       </Switch>
     </>
